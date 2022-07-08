@@ -1,0 +1,84 @@
+@media all and (max-width:600px) {
+
+
+   .layer
+   {
+      width: 95%;
+   }
+   .ml
+   {
+    margin-left: 30px !important;
+   }
+   p
+   {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    font-size: 12px;
+   }
+   .search input
+   {
+    text-align: center;
+    width: 100% !important;
+   }
+   button
+   {
+    margin: auto;
+    
+   }
+   .alert
+   {
+    font-size: 14px;
+    margin: auto;
+    text-align: center;
+   }
+   h1
+   {
+      margin-top: 15px;
+      padding-left: 35px;
+      font-size: 20px;
+   }
+   #contactUs input
+   {
+      text-align: center;
+   }
+}
+@media all and (max-height:499px) {
+    .sideNAvItems 
+    {
+       overflow: auto;
+    }
+    
+    
+}
+
+@media all and (max-width:767px) and (min-width: 500px) {
+   h1
+   {
+      
+      padding-left: 35px;
+      font-size: 24px;
+   }
+   .search input
+   {
+    text-align: center;
+    width: 100% !important;
+   }
+   #contactUs input
+   {
+      text-align: center;
+   }
+   button
+   {
+    margin: auto;
+    
+   }
+}
+
+@media screen and (max-width:1070px) {
+   .container {
+      max-width: calc(100% - 52px) !important; /*52px width for part aside*/
+      margin: auto !important;
+
+   }
+}

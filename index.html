@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author" content="Seif ehab">
+    <meta name="keywords" content="Movies nowPlaying popular topRated UpComing Trending ">
+
+    <!-- font family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <header class=" text-center mt-3">
+        <div class="loading  d-flex justify-content-center align-items-center">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+        <div class="search " id="home">
+            <input class="form-control " type="text" placeholder="Get Movies by word.." id="movieApi">
+            <input class="form-control " type="text" placeholder=" searching..." id="movieInPage">
+        </div>
+        <h1 class="   text-center mt-4 text-white"> Now Playing</h1>
+        <div class="sideNav d-flex  pb-4">
+            <div class="sideNAvItems d-flex flex-column justify-content-between ">
+                <ul>
+                    <li><a href="#home">Now Playing</a></li>
+                    <li><a href="#home">Popular</a></li>
+                    <li><a href="#home">Top Rated</a></li>
+                    <li><a href="#home">Trending</a></li>
+                    <li><a href="#home">Upcoming</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+                <div class="SideNavSocial mt-auto ">
+                    <div class="Social ps-3 text-white">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <p class="text-white">Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+
+            </div>
+            <div class="logosSideNav d-flex flex-column justify-content-between ">
+                <div class="stripLogo mt-3 ">
+                    <img src="images/sidenavTop.png" alt="">
+                </div>
+                <div class="toggleMenu fs-3 ">
+                    <i class="fa fa-align-justify"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="StripBottom pb-3">
+                    <i class="fas fa-globe w-100 pb-4"></i>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="films">
+        <div class="container ">
+            <div id="rowData" class="row g-4 mt-5">
+              
+            </div>
+        </div>
+    </section>
+    <footer class="about" id="contactUs">
+        <div class="container mt-5 ">
+            <h2 class="text-white pt-3 ps-5">Contact Us...</h2>
+            <div class="row contact pb-5 ">
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Enter Your Name" id="name">
+                    <div class="alert alert-danger" role="alert">
+                        Please Enter A valid Name
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Enter Your Email" id="email">
+                    <div class="alert alert-danger" role="alert">
+                        Please Enter A valid Email
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Enter Your phone" id="phone">
+                    <div class="alert alert-danger" role="alert">
+                        Please Enter A valid Phone Number
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Enter Your Age" id="age">
+                    <div class="alert alert-danger" role="alert">
+                        Please Enter your Age
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Enter Your Password" id="password">
+                    <div class="alert alert-danger" role="alert">
+                        Please Enter A valid Password <br>
+                        first Name Capital and At least 6 characters
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Enter Repassword" id="rePassword">
+                    <div class="alert alert-danger" role="alert">
+                        Please Check Your Password
+                    </div>
+                </div>
+                <button class="btn btn-outline-danger mt-5 disabled "> submit</button>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
